@@ -1,0 +1,40 @@
+.main{
+
+}
+
+#header{
+  display: block;
+  background: rgb(0,0,0);
+  background: linear-gradient(9deg, rgba(0,0,0,1) 50%, rgba(0,120,254,1) 100%);
+  text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+    transition: margin 2s;
+    margin-top: -180px;
+    visibility: hidden;
+}
+
+
+@keyframes filling {
+  from{
+    background-position: center 25%;
+  }
+  to {
+    background-position: center 50%;
+  }
+}
+
+.container-text {
+  background-image:  url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color:  #FFFFFF;
+  padding-top: 10px;
+  font-size: 140px;
+  font-family: 'Bungee', cursive;
+  animation: filling 3s ease forwards;
+}

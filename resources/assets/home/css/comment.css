@@ -1,0 +1,50 @@
+.comment{
+    margin: 20px 0;
+    padding: 20px;
+}
+.comment .ava{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.comment .comment-owner{
+    font-weight: 700;
+}
+.comment .comment-owner span{
+    color: #33333387;
+    font-size: 12px;
+}
+
+.comment .comment-respond{
+    margin-left: 0px;
+    width: 170px;
+}
+
+.replyComment{
+    margin-top: 5px;
+    resize: none;
+}
+
+.reply-contain{
+    margin-top: 20px;
+    min-width: 1200px;
+}
+.display-flex{
+    display: flex;
+}
+.display-none {
+    display: none;
+}
+#addComment{
+    display: block;
+}
+
+.reply-comment{
+    margin-left: 110px;
+}
+.reply-contain .ava,
+.reply-comment .ava{
+    width: 70px;
+    height: 70px;
+}

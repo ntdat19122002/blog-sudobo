@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #333;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.pink-color{
+    color: pink;
+}
+
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.row{
+    margin-right: 0;
+    padding: 0;
+}
+.row>*{
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background: rgb(238,184,241);
+    background: linear-gradient(90deg, rgba(238,184,241,1) 0%, rgba(186,238,249,1) 100%);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+}
+.card{
+    top:100px
+}
+.modal .ava{
+    margin: 0 auto;
+}
+.ava{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(../../images/ava-default.png);
+    background-size: contain;
+    background-size: 100% 100%;
+    border: none;
+}
+.modal-content .ava{
+    top: 0;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+}
+#areaModal{
+    top: 73px;
+    left: -84px;
+    width: 624px;
+}

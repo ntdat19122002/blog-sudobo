@@ -18,9 +18,11 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'username',
         'email',
         'password',
+        'firstName',
+        'lastName',
     ];
 
     /**
@@ -29,8 +31,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
-        'password',
-        'remember_token',
+        'password'
     ];
 
     /**
@@ -41,4 +42,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * A user can have many messages
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
+
+    
 }
